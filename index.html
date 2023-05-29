@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -15,9 +20,28 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <main class="content">
+      <div class="payment__summary">
+        <section class="payment__header">
+          <img src="images/illustration-hero.svg" alt="Music-Icon" />
+        </section>
+        <section class="payment__details">
+          <div class="payment__details_content">
+            <h1 class="payment__details_header">Order Summary</h1>
+            <p class="payment__details_description">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+            <div class="flex-group">
+              <p class="payment__details_plan">Annual Plan $59.99/year</p>
+              <p>Change</p>
+            </div>
+            <button class="button">Proceed to Payment</button>
+            <div class="payment__details_cancel">Cancel Order</div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by

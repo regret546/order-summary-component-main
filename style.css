@@ -1,4 +1,23 @@
 :root {
+  /* Primary Colors*/
+  --clr--pale-blue: hsl(225, 100%, 94%);
+  --clr--bright-blue: hsl(245, 75%, 52%);
+
+  /*Neutral Colors */
+  --clr--very-pale-blue: hsl(225, 100%, 98%);
+  --clr--desaturated-blue: hsl(224, 23%, 55%);
+  --clr--dark-blue: hsl(223, 47%, 23%);
+
+  /* Font-Size */
+  --fs--primary: 1rem;
+
+  /* Font-Family */
+  --fm--main: "Red Hat Display", sans-serif;
+
+  /* Font Weight */
+  --fw--regular: 500;
+  --fw--bold: 700;
+  --fw--very-bold: 900;
 }
 
 /*
@@ -77,4 +96,35 @@ h6 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: var(--fm--main);
+  font-size: var(--fs--primary);
+  font-weight: var(--fw--regular);
+  color: var(--clr--desaturated-blue);
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment__summary {
+  display: grid;
+  border: 1px solid red;
+  width: 325px;
+  gap: 1rem;
+}
+
+.payment__details {
+  text-align: center;
+  padding: 1rem;
+}
+
+.payment__details_content {
+  display: grid;
+  gap: 1rem;
 }
