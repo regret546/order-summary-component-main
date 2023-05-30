@@ -128,3 +128,34 @@ body {
   display: grid;
   gap: 1rem;
 }
+
+.payment__details_header {
+  font-weight: var(--fw--very-bold);
+  color: var(--clr--dark-blue);
+}
+
+.flex__group1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr--very-pale-blue);
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.flex__group2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.plan {
+  font-weight: var(--fw--bold);
+  color: var(--clr--dark-blue);
+}
+
+.plan__change {
+  font-size: 0.9rem;
+  font-weight: var(--fw--bold);
+  text-decoration: underline;
+  color: var(--clr--bright-blue);
+}
