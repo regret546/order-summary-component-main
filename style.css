@@ -99,7 +99,12 @@ h6 {
 }
 
 body {
-  background-image: url("images/pattern-background-mobile.svg");
+  background: url("images/pattern-background-mobile.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-position-x: 50px;
   font-family: var(--fm--main);
   font-size: var(--fs--primary);
   font-weight: var(--fw--regular);
@@ -107,7 +112,6 @@ body {
 }
 
 .content {
-  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -120,6 +124,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 20px 20px var(--clr--pale-blue);
+  background-color: white;
 }
 
 .payment__details {
@@ -163,6 +168,11 @@ body {
   color: var(--clr--bright-blue);
 }
 
+.plan__change:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .button {
   background-color: var(--clr--bright-blue);
   text-decoration: none;
@@ -174,6 +184,16 @@ body {
   box-shadow: 0 10px 10px -2px var(--clr--desaturated-blue);
 }
 
+.button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .payment__details_cancel {
   font-weight: var(--fw--bold);
+}
+
+.payment__details_cancel:hover {
+  color: var(--clr--dark-blue);
+  cursor: pointer;
 }
