@@ -99,6 +99,7 @@ h6 {
 }
 
 body {
+  background-image: url("images/pattern-background-mobile.svg");
   font-family: var(--fm--main);
   font-size: var(--fs--primary);
   font-weight: var(--fw--regular);
@@ -106,6 +107,7 @@ body {
 }
 
 .content {
+  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: center;
