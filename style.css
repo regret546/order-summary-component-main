@@ -108,7 +108,7 @@ body {
 .content {
   background: url(images/pattern-background-mobile.svg) no-repeat center center
     fixed;
-  background-color: var(--clr--very-pale-blue);
+  background-color: var(--clr--pale-blue);
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
